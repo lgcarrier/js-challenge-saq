@@ -18,7 +18,7 @@ import { CoveoService } from "./coveo.service";
 import { CoveoSearchComponent }  from './coveo-search.component';
 // import { CoveoResultsComponent }  from './coveo-results.component';
 import { routing }              from './app.routing';
-import { MdCardModule } from '@angular2-material/card';
+// import { MdCardModule } from '@angular2-material/card';
 
 @NgModule({
     imports: [

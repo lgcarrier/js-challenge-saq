@@ -27,6 +27,7 @@ var coveo_service_1 = require("./coveo.service");
 var coveo_search_component_1 = require('./coveo-search.component');
 // import { CoveoResultsComponent }  from './coveo-results.component';
 var app_routing_1 = require('./app.routing');
+// import { MdCardModule } from '@angular2-material/card';
 var AppModule = (function () {
     function AppModule() {
     }
