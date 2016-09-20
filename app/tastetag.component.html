@@ -1,0 +1,7 @@
+<h2>You can start by exploring a taste tag</h2>
+<nav>
+    <a *ngFor="let tastetag of tastetags" [routerLink]="['/products', { filter: tastetag.id }]"
+       routerLinkActive="active" class="img-circle tastetag {{tastetag.id}}">
+        {{tastetag.name}}
+    </a>
+</nav>

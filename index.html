@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <meta charset="UTF-8">
+    <title>JS Challenge - SAQ</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!--<script src="https://code.jquery.com/jquery-3.1.0.min.js"-->
+            <!--integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>-->
+
+    <!--<script src="node_modules/coveo-search-ui/bin/js/CoveoJsSearch.Dependencies.js"></script>-->
+    <!--<script src="node_modules/coveo-search-ui/bin/js/CoveoJsSearch.js"></script>-->
+    <!--<script src="node_modules/coveo-search-ui/bin/js/templates/templatesNew.js"></script>-->
+    <!--<link rel="stylesheet" href="node_modules/coveo-search-ui/bin/css/CoveoFullSearchNewDesign.css"/>-->
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+
+    <script>
+        System.import('app').catch(function (err) {
+            console.error(err);
+        });
+    </script>
+
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+</head>
+<!--<body id="search" class='CoveoSearchInterface' data-enable-history="true" data-results-per-page="12">-->
+<body>
+    <saq-app>Loading App ...</saq-app>
+
+    <!--<script>-->
+        <!--$(function () {-->
+            <!--Coveo.SearchEndpoint.configureCloudEndpoint('js-challenge-saq', '6318103b-f9da-437c-854b-9e6f1f44e27b');-->
+<!--//            $('#search').coveo('init');-->
+        <!--});-->
+    <!--</script>-->
+</body>
+</html>

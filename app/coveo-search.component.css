@@ -1,0 +1,10 @@
+.coveo-search-result{
+    margin-right: 15px;
+}
+
+#coveo-search-box{
+    width: 400px;
+    height: 40px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}

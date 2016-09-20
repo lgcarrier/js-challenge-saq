@@ -1,0 +1,52 @@
+h2 {
+    color: #eeeeee;
+}
+
+nav a.tastetag {
+    border: solid 2px #B08D34;
+}
+
+nav a.tastetag.fruity_light {
+    color: #ffffff;
+    background-color: #e9c5dd;
+}
+
+nav a.tastetag.fruity_medium_bodied {
+    color: #ffffff;
+    background-color: #DE9627;
+}
+
+nav a.tastetag.aromatic_supple {
+    color: #ffffff;
+    background-color: #C9333A;
+}
+
+nav a.tastetag.aromatic_robust {
+    color: #ffffff;
+    background-color: #660A35;
+}
+
+nav a.tastetag.delicate_light {
+    color: #6F6F71;
+    background-color: #EDF2C2;
+}
+
+nav a.tastetag.fruity_vibrant {
+    color: #6F6F71;
+    background-color: #F8E622;
+}
+
+nav a.tastetag.aromatic_mellow {
+    color: #6F6F71;
+    background-color: #B9C0DF;
+}
+
+nav a.tastetag.fruity_sweet {
+    color: #6F6F71;
+    background-color: #ADD3CD;
+}
+
+nav a.tastetag.fruity_extra_sweet {
+    color: #555354;
+    background-color: #A0D9F6;
+}

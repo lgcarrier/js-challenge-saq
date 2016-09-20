@@ -1,0 +1,76 @@
+h1 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+nav a:visited, a:link {
+    color: #607D8B;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #CFD8DC;
+}
+
+nav a.active {
+    color: #039be5;
+}
+
+img.logo-app {
+    float: left;
+    width: 90px;
+    padding: 15px;
+}
+
+.header {
+    background-color: #343232;
+    color: #ffffff;
+}
+
+.header.pinned-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 150px;
+}
+
+.body {
+    display: block;
+    margin-top:180px;
+}
+
+.CoveoSearchbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: 500px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+coveo-search {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px 20px 0 0;
+}

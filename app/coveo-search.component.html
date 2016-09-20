@@ -1,0 +1,52 @@
+<div id="coveo-search-component" class="container">
+
+    <!--<coveo-search-box"></coveo-search-box>-->
+    <input #searchBox id="coveo-search-box" (keypress)="eventHandler($event,searchBox.value)"
+           placeholder="Search criteria"/>
+
+    <!--<coveo-results [results]="coveoResults"></coveo-results>-->
+    <div class="row coveo-search-results">
+        <div *ngFor="let coveoResult of coveoResults | async" class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">{{coveoResult.title}}</div>
+                <div class="panel-body">
+                    <a href="{{coveoResult.clickUri}}" target="_blank"><img class="img-thumbnail"
+                                                                            src="{{coveoResult.raw.tpthumbnailuri}}"/></a>
+                </div>
+                <!-- List group -->
+                <ul class="list-group">
+                    <li class="list-group-item">{{coveoResult.raw.tpcategorieraw}}</li>
+                    <li class="list-group-item">Producer:&nbsp;{{coveoResult.raw.tpproducteur}}</li>
+                    <li class="list-group-item">Country:&nbsp;{{coveoResult.raw.tppays}}</li>
+                    <li class="list-group-item">Price:&nbsp;{{coveoResult.raw.tpprixnum | currency:'CAD':true}}</li>
+                    <li class="list-group-item">Availability... {{coveoResult.raw.tpdisponibilite}}</li>
+                </ul>
+            </div>
+        </div>
+        <!--end column-->
+    </div>
+    <!--end row-->
+
+    <!--TODO::LGCARRIER-->
+    <!--creer la variable resultsCount pour reutiliser lors dun meme refresh-->
+
+    <!--<coveo-results-pagination"></coveo-results-pagination>-->
+    <nav aria-label="..." *ngIf="getResultsCount() > 0">
+        <ul class="pager">
+            <li class="previous" [class.disabled]="getResultsCount() == 0"><a (click)="previousResults()">Previous</a></li>
+            <li class="next"><a (click)="nextResults()">Next</a></li>
+        </ul>
+    </nav>
+
+
+    <nav aria-label="..." *ngIf="getResultsCount() > 0">
+        <ul class="pager">
+            <li class="previous"><a (click)="sortPrice('ascending')">asc</a></li>
+            <li class="next"><a (click)="sortPrice('descending')">desc</a></li>
+        </ul>
+    </nav>
+
+
+
+</div>
