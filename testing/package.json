@@ -1,0 +1,20 @@
+{
+  "name": "saq-test",
+  "version": "1.0.0",
+  "description": "JS Challenge SAQ - Testing",
+  "repository": {
+    "url": "https://github.com/lgcarrier/js-challenge-saq"
+  },
+  "author": "Louis-Guillaume Carrier-Bédard <lgcarrier>",
+  "engines": {
+    "node": "6.6.0"
+  },
+  "scripts": {},
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "nightmare": "^2.7.0"
+  },
+  "devDependencies": {}
+}
