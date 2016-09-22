@@ -28,6 +28,8 @@
     </div>
     <!--end row-->
 
+    <!--<tastetag [search2]="search2"></tastetag>-->
+
     <!--TODO::LGCARRIER-->
     <!--creer la variable resultsCount pour reutiliser lors dun meme refresh-->
 
@@ -39,14 +41,10 @@
         </ul>
     </nav>
 
-
-    <nav aria-label="..." *ngIf="getResultsCount() > 0">
-        <ul class="pager">
-            <li class="previous"><a (click)="sortPrice('ascending')">asc</a></li>
-            <li class="next"><a (click)="sortPrice('descending')">desc</a></li>
-        </ul>
-    </nav>
-
-
-
+    <!--<nav aria-label="..." *ngIf="getResultsCount() > 0">-->
+        <!--<ul class="pager">-->
+            <!--<li class="previous"><a (click)="sortPrice('ascending')">asc</a></li>-->
+            <!--<li class="next"><a (click)="sortPrice('descending')">desc</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
 </div>

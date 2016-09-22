@@ -9,22 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var DashboardComponent = (function () {
-    function DashboardComponent(router) {
-        this.router = router;
+var http_1 = require('@angular/http');
+var ProductSearchService = (function () {
+    function ProductSearchService(http) {
+        this.http = http;
     }
-    DashboardComponent.prototype.ngOnInit = function () {
+    ProductSearchService.prototype.search = function (term) {
+        return this.http
+            .get("app/products/?name=" + term)
+            .map(function (r) { return r.json().data; });
     };
-    DashboardComponent = __decorate([
-        core_1.Component({
-            selector: 'my-dashboard',
-            templateUrl: 'app/dashboard.component.html',
-            styleUrls: ['app/dashboard.component.css']
-        }), 
-        __metadata('design:paramtypes', [router_1.Router])
-    ], DashboardComponent);
-    return DashboardComponent;
+    ProductSearchService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], ProductSearchService);
+    return ProductSearchService;
 }());
-exports.DashboardComponent = DashboardComponent;
-//# sourceMappingURL=dashboard.component.js.map
+exports.ProductSearchService = ProductSearchService;
+//# sourceMappingURL=product-search.service.js.map

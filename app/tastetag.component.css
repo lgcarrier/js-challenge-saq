@@ -50,3 +50,12 @@ nav a.tastetag.fruity_extra_sweet {
     color: #555354;
     background-color: #A0D9F6;
 }
+
+a.tastetag:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+a.img-circle.tastetag {
+    width: 24px;
+    height: 24px;
+}

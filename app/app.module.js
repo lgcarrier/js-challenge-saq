@@ -17,17 +17,17 @@ var http_1 = require('@angular/http');
 // import { InMemoryDataService }  from './in-memory-data.service';
 var app_component_1 = require('./app.component');
 var dashboard_component_1 = require('./dashboard.component');
-var products_component_1 = require('./products.component');
-var product_detail_component_1 = require('./product-detail.component');
-var product_service_1 = require('./product.service');
-var product_search_component_1 = require('./product-search.component');
+// import { ProductsComponent }      from './products.component';
+// import { ProductDetailComponent }  from './product-detail.component';
+// import { ProductService }          from './product.service';
+// import { ProductSearchComponent }  from './product-search.component';
 var tastetag_component_1 = require('./tastetag.component');
 var tastetag_service_1 = require("./tastetag.service");
 var coveo_service_1 = require("./coveo.service");
 var coveo_search_component_1 = require('./coveo-search.component');
 // import { CoveoResultsComponent }  from './coveo-results.component';
 var app_routing_1 = require('./app.routing');
-// import { MdCardModule } from '@angular2-material/card';
+// import { MdCardModule } from '@angular2-material/card/card';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -43,14 +43,14 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 dashboard_component_1.DashboardComponent,
-                product_detail_component_1.ProductDetailComponent,
-                products_component_1.ProductsComponent,
-                product_search_component_1.ProductSearchComponent,
+                // ProductDetailComponent,
+                // ProductsComponent,
+                // ProductSearchComponent,
                 coveo_search_component_1.CoveoSearchComponent,
                 tastetag_component_1.TastetagComponent
             ],
             providers: [
-                product_service_1.ProductService,
+                // ProductService,
                 tastetag_service_1.TastetagService,
                 coveo_service_1.CoveoService
             ],

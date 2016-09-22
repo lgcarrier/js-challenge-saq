@@ -22,13 +22,28 @@ var CoveoSearchComponent = (function () {
         console.log(term);
         this.searchTerms.next(term);
     };
+    CoveoSearchComponent.prototype.search2 = function (term) {
+        var _this = this;
+        console.log(term);
+        this.coveoResults = this.searchTerms
+            .debounceTime(300) // wait for 300ms pause in events
+            .distinctUntilChanged() // ignore if next search term is same as previous
+            .switchMap(function (term) { return term // switch to new observable each time
+            ? _this.coveoService.search(term)
+            : Observable_1.Observable.of([]); })
+            .catch(function (error) {
+            // TODO: real error handling
+            console.log(error);
+            return Observable_1.Observable.of([]);
+        });
+    };
     CoveoSearchComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.coveoResults = this.searchTerms
             .debounceTime(300) // wait for 300ms pause in events
             .distinctUntilChanged() // ignore if next search term is same as previous
             .switchMap(function (term) { return term // switch to new observable each time
-            ? _this.coveoService.search2(term)
+            ? _this.coveoService.search(term)
             : Observable_1.Observable.of([]); })
             .catch(function (error) {
             // TODO: real error handling

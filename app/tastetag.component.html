@@ -1,7 +1,14 @@
-<h2>You can start by exploring a taste tag</h2>
+<h2>Start by exploring a taste tag</h2>
 <nav>
-    <a *ngFor="let tastetag of tastetags" [routerLink]="['/products', { filter: tastetag.id }]"
-       routerLinkActive="active" class="img-circle tastetag {{tastetag.id}}">
-        {{tastetag.name}}
+    <!--<div class="row">-->
+    <!--<div *ngFor="let tastetag of tastetags" class="col-lg-1 col-sm-2">-->
+    <!--<a *ngFor="let tastetag of tastetags" [routerLink]="['/dashboard', { filter: tastetag.id }]"-->
+    <!--routerLinkActive="active" class="img-circle tastetag {{tastetag.id}}" title="{{tastetag.name}}">-->
+
+    <a *ngFor="let tastetag of tastetags" class="img-circle tastetag {{tastetag.id}}" title="{{tastetag.name}}"
+       (click)="search2(tastetag.searchTerm)">
+        <!--{{tastetag.name}}-->
     </a>
+    <!--</div>-->
+    <!--</div>-->
 </nav>

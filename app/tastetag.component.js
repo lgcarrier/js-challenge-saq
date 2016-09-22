@@ -21,17 +21,21 @@ var TastetagComponent = (function () {
         // this.tastetagService.getTastetags()
         //     .then(tastetags => this.tastetags = tastetags);
         this.tastetags = [
-            { id: 'fruity_light', name: 'Fruity and light' },
-            { id: 'fruity_medium_bodied', name: 'Fruity and medium-bodied' },
-            { id: 'aromatic_supple', name: 'Aromatic and supple' },
-            { id: 'aromatic_robust', name: 'Aromatic and robust' },
-            { id: 'delicate_light', name: 'Delicate and light' },
-            { id: 'fruity_vibrant', name: 'Fruity and vibrant' },
-            { id: 'aromatic_mellow', name: 'Aromatic and mellow' },
-            { id: 'fruity_sweet', name: 'Fruity and swee' },
-            { id: 'fruity_extra_sweet', name: 'Fruity and extra sweet' }
+            { id: 'fruity_light', name: 'Fruity and light', searchTerm: '"fruité et léger"' },
+            { id: 'fruity_medium_bodied', name: 'Fruity and medium-bodied', searchTerm: '' },
+            { id: 'aromatic_supple', name: 'Aromatic and supple', searchTerm: '' },
+            { id: 'aromatic_robust', name: 'Aromatic and robust', searchTerm: '' },
+            { id: 'delicate_light', name: 'Delicate and light', searchTerm: '' },
+            { id: 'fruity_vibrant', name: 'Fruity and vibrant', searchTerm: '' },
+            { id: 'aromatic_mellow', name: 'Aromatic and mellow', searchTerm: '' },
+            { id: 'fruity_sweet', name: 'Fruity and swee', searchTerm: '' },
+            { id: 'fruity_extra_sweet', name: 'Fruity and extra sweet', searchTerm: '' }
         ];
     };
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], TastetagComponent.prototype, "search2", void 0);
     TastetagComponent = __decorate([
         core_1.Component({
             selector: 'tastetag',

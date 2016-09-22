@@ -25,8 +25,6 @@ export class CoveoService {
         return this.http
             .get(coveoUrl + `&q=${term}`)
             .map((r: Response) => this.coveoResults = <CoveoResult[]> r.json().results);
-
-
     }
 
     search2(term: string) {

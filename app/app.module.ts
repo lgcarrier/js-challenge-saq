@@ -8,17 +8,17 @@ import { HttpModule }    from '@angular/http';
 // import { InMemoryDataService }  from './in-memory-data.service';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
-import { ProductsComponent }      from './products.component';
-import { ProductDetailComponent }  from './product-detail.component';
-import { ProductService }          from './product.service';
-import { ProductSearchComponent }  from './product-search.component';
+// import { ProductsComponent }      from './products.component';
+// import { ProductDetailComponent }  from './product-detail.component';
+// import { ProductService }          from './product.service';
+// import { ProductSearchComponent }  from './product-search.component';
 import { TastetagComponent }  from './tastetag.component';
 import { TastetagService } from "./tastetag.service";
 import { CoveoService } from "./coveo.service";
 import { CoveoSearchComponent }  from './coveo-search.component';
 // import { CoveoResultsComponent }  from './coveo-results.component';
 import { routing }              from './app.routing';
-// import { MdCardModule } from '@angular2-material/card';
+// import { MdCardModule } from '@angular2-material/card/card';
 
 @NgModule({
     imports: [
@@ -28,20 +28,20 @@ import { routing }              from './app.routing';
         // InMemoryWebApiModule.forRoot(InMemoryDataService),
         routing
         // ,MdCardModule.forRoot()
-        //,MdCardModule
+        // ,MdCardModule
     ],
     declarations: [
         AppComponent,
         DashboardComponent,
-        ProductDetailComponent,
-        ProductsComponent,
-        ProductSearchComponent,
+        // ProductDetailComponent,
+        // ProductsComponent,
+        // ProductSearchComponent,
         CoveoSearchComponent,
         TastetagComponent
         // ,CoveoResultsComponent
     ],
     providers: [
-        ProductService,
+        // ProductService,
         TastetagService,
         CoveoService
     ],
